@@ -1,0 +1,275 @@
+:root{
+    /* --- COLORES --- */
+      --azul-bodegom: #00357E;
+      --azul-bodegom-darker: rgb(2, 41, 60);
+      --naranja-bodegom: #E77122;
+      --background-color: #FFF;
+      --text-color-87:rgba(0, 0, 0, 0.87);
+      --text-color-60:rgba(0, 0, 0, 0.60);
+      --text-color-40:rgba(0, 0, 0, 0.40);
+      --text-color-white: #FFF;
+      --card-elevation: 0px 4px 8px rgba(0, 0, 0, 0.12);
+      --card-border-radius: 10px;
+      --font-family: "Open Sans", sans-serif;
+      --medida1: 8px;
+      --medida2: 16px;
+      --medida3: 24px;
+      --medida4: 32px;
+      
+      
+  
+  }
+  html, body {
+    margin: 0px;
+    padding: 0px;
+    font-family: var(--font-family);
+    background: var(--background-color);
+  }
+
+  /* --- textos --- */
+  h1 {
+    margin: 0px;
+    padding: 0px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 41px;
+    color: var(--text-color-white);
+  }
+  h2 {
+    margin: 0px;
+    padding: 0px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+    color: var(--text-color-87);
+
+  }
+  h3 {
+    margin: 0px;
+    padding: 0px;
+    color: var(--text-color-87);
+  }
+
+  h4 {
+    margin: 0px;
+    padding: 0px;
+    color: var(--text-color-87)
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px;;
+  }
+  
+  p {
+    margin: 0px;
+    padding: 0px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--text-color-60)
+  }
+  
+
+  /* --- COSAS QUE REUSO --- */
+  .text-color-white {
+    color: var(--text-color-white);
+  }
+  
+  .mt-1 {
+    margin-top: var(--medida1);
+    
+  }
+  .mb-1 {
+    margin-bottom: var(--medida1);
+  }
+
+  .mb-2 {
+    margin-bottom: var(--medida2);
+  }
+
+  .mb-3 {
+    margin-bottom: var(--medida3);
+  }
+
+  .p-1 {
+    padding: var(--medida1);
+  }
+  .pb-1 {
+    padding-bottom: var(--medida1);
+  }
+
+  .p-2 {
+    padding: var(--medida2);
+  }
+
+  .center {
+    text-align: center;
+  }
+
+  .d-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    
+  }
+
+  .flex-bottom {
+    
+    align-items: flex-start;
+    justify-content: flex-end;
+  }
+
+  /* --- COSAS QUE REUSO --- */
+  
+  
+  /* --- NAVBAR --- */
+  nav {
+    height: 72px;
+    background-color: white;
+    box-shadow: var(--card-elevation);
+    padding-left: 16px;
+    padding-right: 16px;
+    display: grid;
+    align-items: center;
+    justify-content: space-between;
+    grid-auto-flow: column;
+  }
+  
+  nav .brand_image {
+    margin: 0px;
+    padding: 0px;
+    display: grid;
+  
+  }
+  
+  nav .nav_options {
+    display: grid;
+    grid-gap: 16px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  nav ul {
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 16px;
+    margin: 0px;
+  }
+  
+  nav li {
+    display: grid;
+    grid-gap: 16px;
+    list-style: none;
+  }
+  
+  nav li a {
+    display: grid;
+  grid-gap: 16px;
+  font-style: normal;
+  
+  font-size: 18px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-decoration-line: none;
+  
+  color: var(--text-color-87);
+  }
+  
+  nav li a:hover {
+    color: var(--azul-bodegom-darker);
+    
+  }
+  /* --- navbar --- */
+
+
+/* --- MAIN SECTION --- */
+  .main_section {
+    
+    background-image: url(../images/fondo-bodegom.png) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 280px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    color: white
+   
+  }
+  
+   /* --- LAYOUT --- */
+   .container {
+  
+    padding: var(--medida2);
+  }  
+  
+  /* --- BOTON --- */
+  button {
+    /* Rectangulo*/
+    background-color: var(--naranja-bodegom);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.12);
+    border-radius: 20px;
+    height: 42px;
+    border-width: 0px;
+    cursor: pointer;
+    padding-right: 32px;
+    padding-left: 32px;
+  
+    /* texto*/
+  font-style: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--text-color-white)
+  }
+  
+  button a{
+  
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  color: white;
+  text-decoration: none;
+  
+  
+  }
+  
+  button:hover {
+    /* Rectangulo*/
+    background-color: ##de4039;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.12);
+    border-radius: 20px;
+    border-width: 0px;
+    
+  
+  }
+  
+  /* --- BOTON --- */
+.card-list{
+  display: grid;
+  grid-gap: 8px;
+  grid-template-columns: 1fr 1fr
+    
+  }
+.card {
+  display: grid;
+  box-shadow: var(--card-elevation);
+  border-radius: var(--card-border-radius);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+   
+ }
+  
+ .card:hover {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.24);
+ }
+
+
+}.center {
+ text-align: center;
+}
