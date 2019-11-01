@@ -22,6 +22,8 @@
   }
   ::-moz-selection {
     background: var(--naranja-bodegom); /* Gecko Browsers */
+
+    
   }
   html, body {
     margin: 0px;
@@ -150,6 +152,7 @@
     box-shadow: var(--card-elevation);
     display: flex;
     
+    
    
   }
   nav .container {
@@ -159,10 +162,7 @@
 
   }
   
-  nav .brand_image {
-    
   
-  }
   
   nav .nav_options {
    
