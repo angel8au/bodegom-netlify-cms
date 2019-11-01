@@ -1,23 +1,27 @@
 :root{
-    /* --- COLORES --- */
-      --azul-bodegom: #00357E;
-      --azul-bodegom-darker: rgb(2, 41, 60);
-      --naranja-bodegom: #E77122;
-      --background-color: #FFF;
-      --text-color-87:rgba(0, 0, 0, 0.87);
-      --text-color-60:rgba(0, 0, 0, 0.60);
-      --text-color-40:rgba(0, 0, 0, 0.40);
-      --text-color-white: #FFF;
-      --card-elevation: 0px 4px 8px rgba(0, 0, 0, 0.12);
-      --card-border-radius: 10px;
-      --font-family: "Open Sans", sans-serif;
-      --medida1: 8px;
-      --medida2: 16px;
-      --medida3: 24px;
-      --medida4: 32px;
-      
-      
-  
+  /* --- COLORES --- */
+    --azul-bodegom: #00357E;
+    --azul-bodegom-darker: rgb(2, 41, 60);
+    --naranja-bodegom: #E77122;
+    --background-color: #FFF;
+    --text-color-87:rgba(0, 0, 0, 0.87);
+    --text-color-60:rgba(0, 0, 0, 0.60);
+    --text-color-40:rgba(0, 0, 0, 0.40);
+    --text-color-white: #FFF;
+    --card-elevation: 0px 4px 8px rgba(0, 0, 0, 0.12);
+    --card-border-radius: 10px;
+    --font-family: "Open Sans", sans-serif;
+    --medida1: 8px;
+    --medida2: 16px;
+    --medida3: 24px;
+    --medida4: 32px;
+  }
+  ::selection {
+    background: var(--naranja-bodegom); /* WebKit/Blink Browsers */
+    color: white;
+  }
+  ::-moz-selection {
+    background: var(--naranja-bodegom); /* Gecko Browsers */
   }
   html, body {
     margin: 0px;
@@ -36,6 +40,7 @@
     line-height: 41px;
     color: var(--text-color-white);
   }
+
   h2 {
     margin: 0px;
     padding: 0px;
@@ -44,8 +49,8 @@
     font-size: 24px;
     line-height: 33px;
     color: var(--text-color-87);
-
   }
+
   h3 {
     margin: 0px;
     padding: 0px;
@@ -72,7 +77,6 @@
     color: var(--text-color-60)
   }
   
-
   /* --- COSAS QUE REUSO --- */
   .text-color-white {
     color: var(--text-color-white);
@@ -93,6 +97,13 @@
   .mb-3 {
     margin-bottom: var(--medida3);
   }
+  .mb-4 {
+    margin-bottom: var(--medida4);
+  }
+
+  .mb-100 {
+    margin-bottom: 100px;
+  }
 
   .p-1 {
     padding: var(--medida1);
@@ -106,7 +117,7 @@
   }
 
   .center {
-    text-align: center;
+    justify-content: center;
   }
 
   .d-flex {
@@ -114,7 +125,6 @@
     flex-direction: column;
     justify-content: flex-end;
     flex-wrap: wrap;
-    
   }
 
   .flex-bottom {
@@ -123,48 +133,59 @@
     justify-content: flex-end;
   }
 
-  /* --- COSAS QUE REUSO --- */
+  .container {
+    
+    
+    padding: var(--medida2);
+  }  
   
+
+  /* --- COSAS QUE REUSO --- */
   
   /* --- NAVBAR --- */
   nav {
     height: 72px;
+    
     background-color: white;
     box-shadow: var(--card-elevation);
-    padding-left: 16px;
-    padding-right: 16px;
-    display: grid;
-    align-items: center;
-    justify-content: space-between;
-    grid-auto-flow: column;
+    display: flex;
     
+   
+  }
+  nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
   }
   
   nav .brand_image {
-    margin: 0px;
-    padding: 0px;
-    display: grid;
+    
   
   }
   
   nav .nav_options {
-    display: grid;
-    grid-gap: 16px;
-    align-items: center;
-    justify-content: space-between;
+   
+    display: none;
+    
   }
   
   nav ul {
+    display: flex;
+    text-decoration: none;
+    margin: 0px;
     display: grid;
     grid-auto-flow: column;
     grid-gap: 16px;
-    margin: 0px;
+    
+   
   }
   
   nav li {
-    display: grid;
-    grid-gap: 16px;
     list-style: none;
+    display: grid;
+    grid-gap: var(--medida2);
+    
   }
   
   nav li a {
@@ -178,11 +199,11 @@
   align-items: center;
   text-decoration-line: none;
   
-  color: var(--text-color-87);
+  color: var(--azul-bodegom);
   }
   
   nav li a:hover {
-    color: var(--azul-bodegom-darker);
+    color:var(--naranja-bodegom);
     
   }
   /* --- navbar --- */
@@ -190,7 +211,6 @@
 
 /* --- MAIN SECTION --- */
   .main_section {
-    
     background-image: url(../images/fondo-bodegom.png) ;
     background-position: center;
     background-repeat: no-repeat;
@@ -199,16 +219,10 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-
     color: white
-   
   }
   
    /* --- LAYOUT --- */
-   .container {
-  
-    padding: var(--medida2);
-  }  
   
   /* --- BOTON --- */
   button {
@@ -230,15 +244,12 @@
   }
   
   button a{
-  
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
   line-height: 16px;
   color: white;
   text-decoration: none;
-  
-  
   }
   
   button:hover {
@@ -271,3 +282,79 @@
 .center {
  text-align: center;
 }
+
+
+@media screen and (min-width: 480px) {
+
+
+  h1 {
+    margin: 0px;
+    padding: 0px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 1em;
+    color: var(--text-color-white);
+  }
+  .main_section {
+    background-image: url(../images/m-fondo-bodegom.jpg) ;
+    height: 400px;
+}
+
+}
+@media screen and (min-width: 768px) {
+  nav .nav_options {
+    display: flex;
+  }
+}
+  
+  
+@media screen and (min-width: 1024px) {
+  h1 {
+    margin: 0px;
+    padding: 0px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 1em;
+    color: var(--text-color-white);
+  }
+
+
+  .container {
+    
+    width: 100%;
+    padding: var(--medida2);
+  }  
+  
+  .main_section {
+    background-image: url(../images/lg-fondo-bodegom.jpg) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+    
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: white
+  }
+   /* --- LAYOUT --- */
+   
+  .container {
+    
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+    
+  .col-5 {
+    
+    width: 58%;
+   }
+
+
+   .mb-lg-100 {
+    margin-bottom: 100px;
+  }
+}  
