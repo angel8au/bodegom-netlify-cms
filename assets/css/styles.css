@@ -12,9 +12,14 @@
 /* --- colores --- */
 /* --- box-shodow --- */
 --card-elevation: 0px 4px 8px rgba(0, 0, 0, 0.12);
+/* --- box-shodow --- */
+/* --- border-raius --- */
 --card-border-radius: 10px;
+/* --- border-raius --- */
+/* --- typografia --- */
 --font-family: "Open Sans", sans-serif;
-/* --- espaciado --- */
+/* --- typografia --- */
+/* --- spacing --- */
 --medida1: 8px;
 --medida2: 16px;
 --medida3: 24px;
@@ -66,7 +71,6 @@ h4 {
   font-size: 15px;
   line-height: 20px;;
 }
-
 p {
   margin: 0px;
   padding: 0px;
@@ -76,7 +80,6 @@ p {
   line-height: 22px;
   color: var(--text-color-60)
 }
-
 /* --- COSAS QUE REUSO --- */
 .red {
   background-color: #de4039;
@@ -221,7 +224,7 @@ p {
 
 /* --- MAIN SECTION --- */
   .main_section {
-    background-image: url(../images/fondo-bodegom.png) ;
+    background-image: url(../images/m-fondo-bodegom.jpg) ;
     background-position: center;
     background-repeat: no-repeat;
     height: 360px;
