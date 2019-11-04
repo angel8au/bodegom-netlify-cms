@@ -147,11 +147,7 @@ said applies to this layer:------------------ */
  .container {
   padding: var(--medida2);
 } 
- /* --- LAY OUT --- */
- .container .col-5 {
-  padding: var(--medida2);
-}   
-
+ 
 
 
 
@@ -360,6 +356,9 @@ nav li a:hover {
 }
 
 /* --- PADDINGS --- */
+.p-0 .important {
+  padding: 0px;
+}
 .p-1 {
   padding: var(--medida1);
 }
@@ -466,7 +465,7 @@ p {
 .container {
   
   width: 100%;
-  padding: var(--medida2);
+  ;
 }  
 
 .main_section {
@@ -496,6 +495,5 @@ p {
   margin-bottom: 100px;
 }
 
-  
 }  
 
