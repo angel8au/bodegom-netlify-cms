@@ -1,4 +1,15 @@
-/* ----------------- VARIABLES ------------------ */
+/*
+#  ·················
+#  ··_______________
+#  ·/·___/·___/·___/
+#  /·/__(__··|__··)·
+#  \___/____/____/··
+#  ··ITCSS-BEM·········
+*/
+
+/* ----------------- SETTINGS ------------------ */
+
+/* ---------- VARIABLES -------------- */
 :root{
 /* --- colores --- */
 --azul-bodegom: #00357E;
@@ -9,35 +20,68 @@
 --text-color-60:rgba(0, 0, 0, 0.60);
 --text-color-40:rgba(0, 0, 0, 0.40);
 --text-color-white: #FFF;
-/* --- colores --- */
+
 /* --- box-shodow --- */
 --card-elevation: 0px 4px 8px rgba(0, 0, 0, 0.12);
-/* --- box-shodow --- */
-/* --- border-raius --- */
+
+/* --- border-radius --- */
 --card-border-radius: 10px;
-/* --- border-raius --- */
+
 /* --- typografia --- */
 --font-family: "Open Sans", sans-serif;
-/* --- typografia --- */
+
 /* --- spacing --- */
 --medida1: 8px;
 --medida2: 16px;
 --medida3: 24px;
 --medida4: 32px;
+--medida5: 40px;
 }
+/* ----------------- TOOLS (MIXINGS) ------------------ */
+
+
+
+
+
+
+
+/* ----------------- GENERIC (Resets, Normalize)------------------ */
+
+
 ::selection {
   background: var(--naranja-bodegom); /* WebKit/Blink Browsers */
   color: white;
 }
 ::-moz-selection {
-  background: var(--naranja-bodegom); /* Gecko Browsers */
+  background: var(--naranja-bodegom);
+  color: white; /* Gecko Browsers */
 }
+
+/* -------------------------------------------  */
 html, body {
   margin: 0px;
   padding: 0px;
   font-family: var(--font-family);
   background: var(--background-color);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------- ELEMENTS ------------------ */
+
 /* --- textos --- */
 h1 {
   margin: 0px;
@@ -48,6 +92,7 @@ h1 {
   line-height: 41px;
   color: var(--text-color-white);
 }
+
 h2 {
   margin: 0px;
   padding: 0px;
@@ -57,11 +102,13 @@ h2 {
   line-height: 33px;
   color: var(--text-color-87);
 }
+
 h3 {
   margin: 0px;
   padding: 0px;
   color: var(--text-color-87);
 }
+
 h4 {
   margin: 0px;
   padding: 0px;
@@ -71,6 +118,7 @@ h4 {
   font-size: 15px;
   line-height: 20px;;
 }
+
 p {
   margin: 0px;
   padding: 0px;
@@ -80,166 +128,49 @@ p {
   line-height: 22px;
   color: var(--text-color-60)
 }
-/* --- COSAS QUE REUSO --- */
-.red {
-  background-color: #de4039;
-}
-.yellow {
-  background-color: yellow;
-}
 
 
-/* --- TEXT COLOR --- */
-  .text-color-white {
-    color: var(--text-color-white);
-  }
-  
-  /* --- MARGINS --- */
-  .mt-1 {
-    margin-top: var(--medida1);
-  }
-  .mb-1 {
-    margin-bottom: var(--medida1);
-  }
 
-  .mb-2 {
-    margin-bottom: var(--medida2);
-  }
 
-  .mb-3 {
-    margin-bottom: var(--medida3);
-  }
-  .mb-4 {
-    margin-bottom: var(--medida4);
-  }
 
-  .mb-100 {
-    margin-bottom: 100px;
-  }
 
-  /* --- PADDINGS --- */
+/* ----------------- OBJECT LAY OUT CLASES 
+Objects follow OOCSS (Object Oriented CSS) principles. 
+They are small and reusable pieces with no aesthetics 
+which can be used in UI composition. Examples are wrappers, 
+grids, skins to apply to lists, buttons, inputs, etc. 
+In other words: any pattern that is repeated over your 
+UI is a potential object candidate. What ITCSS author 
+said applies to this layer:------------------ */
 
-  .p-1 {
-    padding: var(--medida1);
-  }
-  .pb-1 {
-    padding-bottom: var(--medida1);
-  }
-
-  .p-2 {
-    padding: var(--medida2);
-  }
-/* --- DISPLAY SETTINGS --- */
-  .center {
-    margin: auto;
-  }
-
-  .d-flex {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-  }
-
-  .flex-bottom {
-    
-    align-items: flex-start;
-    justify-content: flex-end;
-  }
  /* --- LAY OUT --- */
-  .container {
-    padding: var(--medida2);
-  }  
-  
-
-  /* --- COSAS QUE REUSO --- */
-  
-  /* --- NAVBAR --- */
-  .sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-  }
-  nav {
-    height: 58px;
-    
-    background-color: white;
-    box-shadow: var(--card-elevation);
-    display: flex;
-    
-  }
-  nav .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-  }
-  
-  
-  
-  nav .nav_options {
-   
-    display: none;
-    
-  }
-  
-  nav ul {
-    display: flex;
-    text-decoration: none;
-    margin: 0px;
-    display: grid;
-    grid-auto-flow: column;
-    grid-gap: 16px;
-    
-   
-  }
-  
-  nav li {
-    list-style: none;
-    display: grid;
-    grid-gap: var(--medida2);
-    
-  }
-  
-  nav li a {
-    display: grid;
-  grid-gap: 16px;
-  font-style: normal;
-  
-  font-size: 18px;
-  line-height: 24px;
-  display: flex;
-  align-items: center;
-  text-decoration-line: none;
-  
-  color: var(--azul-bodegom);
-  }
-  
-  nav li a:hover {
-    color:var(--naranja-bodegom);
-    
-  }
-  /* --- navbar --- */
+ .container {
+  padding: var(--medida2);
+} 
+ /* --- LAY OUT --- */
+ .container .col-5 {
+  padding: var(--medida2);
+}   
 
 
-/* --- MAIN SECTION --- */
-  .main_section {
-    background-image: url(../images/m-fondo-bodegom.jpg) ;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 360px;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    color: white
-  }
-  
-   /* --- LAYOUT --- */
-  
-  /* --- BOTON --- */
-  button {
-    /* Rectangulo*/
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------- COMPONENTS ------------------ */
+
+
+/* --- BOTON --- */
+button {
+  /* Rectangulo*/
     background-color: var(--naranja-bodegom);
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.12);
     border-radius: 20px;
@@ -249,37 +180,104 @@ p {
     padding-right: 32px;
     padding-left: 32px;
   
-    /* texto*/
-  font-style: normal;
-  font-size: 14px;
-  line-height: 16px;
-  color: var(--text-color-white)
+  /* texto*/
+    font-style: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--text-color-white)
   }
   
   button a{
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 16px;
-  color: white;
-  text-decoration: none;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: white;
+    text-decoration: none;
   }
   
   button:hover {
     /* Rectangulo*/
-    background-color: #de4039;
+    background-color: #e95d00;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.12);
     border-radius: 20px;
     border-width: 0px;
   }
   
-  /* --- CARDS --- */
+ 
+/* --- NAVBAR --- */
+
+nav {
+  height: 58px;
+  background-color: white;
+  box-shadow: var(--card-elevation);
+  display: flex;
+}
+
+nav ul {
+  display: flex;
+  text-decoration: none;
+  margin: 0px;
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 16px;  
+}
+ 
+nav li {
+  list-style: none;
+  display: grid;
+  grid-gap: var(--medida2);
+}
+ 
+nav li a {
+  display: grid;
+  grid-gap: 16px;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-decoration-line: none;
+  color: var(--azul-bodegom);
+}
+ 
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+ 
+nav .nav_options {
+  display: none; 
+}
+
+nav li a:hover {
+  color:var(--naranja-bodegom);
+}
+ 
+
+/* --- MAIN SECTION --- */
+.main_section {
+  background-image: url(../images/m-fondo-bodegom.jpg) ;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 360px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: white
+}
+
+
+
+/* --- CARDS --- */
 .card-list{
   display: grid;
   grid-gap: 8px;
-  grid-template-columns: 1fr 1fr
-    
+  grid-template-columns: 1fr 1fr 
   }
+
 .card {
   display: grid;
   box-shadow: var(--card-elevation);
@@ -298,9 +296,117 @@ p {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------- UTILITIES ------------------ */
+/* lo que hace que el navbar se quede hasta arriba*/
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+ 
+.red {
+  background-color: #de4039;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+/* --- TEXT COLOR --- */
+.text-color-white {
+  color: var(--text-color-white);
+}
+
+/* --- MARGINS --- */
+.mt-1 {
+  margin-top: var(--medida1);
+}
+
+.mb-1 {
+  margin-bottom: var(--medida1);
+}
+
+.mb-2 {
+  margin-bottom: var(--medida2);
+}
+
+.mb-3 {
+  margin-bottom: var(--medida3);
+}
+.mb-4 {
+  margin-bottom: var(--medida4);
+}
+
+.mb-100 {
+  margin-bottom: 100px;
+}
+
+/* --- PADDINGS --- */
+.p-1 {
+  padding: var(--medida1);
+}
+.pb-1 {
+  padding-bottom: var(--medida1);
+}
+
+.p-2 {
+  padding: var(--medida2);
+}
+
+/* --- DISPLAY SETTINGS --- */
+.center {
+  margin: auto;
+}
+
+.d-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.flex-bottom {
+  
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -----------MEDIAS QUERYS-- */
+
+
+
+/* ------------------------------------ tablets 480px --- */
 @media screen and (min-width: 480px) {
-
-
   h1 {
     margin: 0px;
     padding: 0px;
@@ -316,95 +422,80 @@ p {
 }
 
 }
+
+/* ------------------------------------ tablets 768px --- */
 @media screen and (min-width: 768px) {
   nav .nav_options {
     display: flex;
   }
 }
   
-  
+/* ------------------------------------ tablets 1024 --- */
 @media screen and (min-width: 1024px) {
-  h1 {
-    margin: 0px;
-    padding: 0px;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 60px;
-    line-height: 1em;
-    color: var(--text-color-white);
-  }
 
-  h2{
-    
-    
-    font-weight: 900;
-    font-size: 42px;
-    line-height: 1.2em;
-    
-  }
+h1 {
+  margin: 0px;
+  padding: 0px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 1em;
+  color: var(--text-color-white);
+}
 
+h2{ 
+  font-weight: 900;
+  font-size: 42px;
+  line-height: 1.2em;
+}
 
-  .container {
-    
-    width: 100%;
-    padding: var(--medida2);
-  }  
+h4 {
+  font-size: 22px;
+}
+
+p {
+  margin: 0px;
+  padding: 0px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: var(--text-color-60)
+}
+
+.container {
   
-  .main_section {
-    background-image: url(../images/lg-fondo-bodegom.jpg) ;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 88vh;
-    
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    color: white
-  }
-   /* --- LAYOUT --- */
-   
-  .container {
-    
-    max-width: 1024px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-    
-  .col-5 {
-    
-    width: 58%;
-   }
+  width: 100%;
+  padding: var(--medida2);
+}  
 
-
-   .mb-lg-100 {
-    margin-bottom: 100px;
-  }
+.main_section {
+  background-image: url(../images/lg-fondo-bodegom.jpg) ;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 88vh;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: white
+}
+ /* --- LAYOUT --- */
+ 
+.container {
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+}
   
+.col-5 {
+  width: 58%;
+ }
 
-  /* --- CARDS --- */
-  .card-list{
-    display: grid;
-    grid-gap: 24px;
-    grid-template-columns: 200px 200px;
-    justify-items: center;
-    align-items: center;
-    }
-  .card {
-    display: grid;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    box-shadow: var(--card-elevation);
-    border-radius: var(--card-border-radius);
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    justify-items: center;
-    align-items: center;
-     
-   }
-    
-   .card:hover {
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.24);
-   }
+ .mb-lg-100 {
+  margin-bottom: 100px;
+}
+
+  
 }  
 
