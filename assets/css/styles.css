@@ -430,7 +430,7 @@ nav li a:hover {
 }
 
 
-.footer__ul {
+.footer__ul--col {
   display: flex;
   text-decoration: none;
   margin: 0px;
@@ -439,6 +439,18 @@ nav li a:hover {
   grid-gap: 16px;
   padding-inline-start: 0px;
 }  
+
+.footer__ul--row {
+  display: flex;
+  text-decoration: none;
+  margin: 0px;
+  display: grid;
+  grid-auto-flow: row;
+  grid-gap: 16px;
+  padding-inline-start: 0px;
+}  
+
+
 
 .footer__grid-item {
   display: grid;
@@ -469,6 +481,17 @@ nav li a:hover {
   color: var(--naranja-bodegom);
 }
 
+@media screen and (min-width: 1024px) {
+  .footer__lg-ul--row {
+    display: flex;
+    text-decoration: none;
+    margin: 0px;
+    display: grid;
+    grid-auto-flow: row;
+    grid-gap: 16px;
+    padding-inline-start: 0px;
+  } 
+  }  
 
 
 @media screen and (min-width: 1024px) {
@@ -482,9 +505,14 @@ nav li a:hover {
     color: white; 
 }
 
+.footer__grid-item {
+  display: grid;
+  justify-items: left;
+  align-items: left;
 }
 
-
+}
+/* --- Footer --- */
 
 
 
@@ -522,6 +550,9 @@ nav li a:hover {
 /* --- MARGINS --- */
 .mt-1 {
   margin-top: var(--medida1);
+}
+.mt-4 {
+  margin-top: var(--medida4);
 }
 
 .mb-1 {
