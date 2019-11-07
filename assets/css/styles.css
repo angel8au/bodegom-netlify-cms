@@ -31,7 +31,7 @@ MEDIA QUERY: SE ESTA PONIENDO UNO PARA TODOS LOS ELEMENTOS Y PARA CADA UNO DE LO
 --card-border-radius: 10px;
 
 /* --- typografia --- */
---font-family: "Arial",  sans-serif;
+--font-family: "Open Sans",  sans-serif;
 
 /* --- spacing --- */
 --medida1: 8px;
@@ -136,7 +136,7 @@ p {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 22px;
+  line-height: 24px;
   color: var(--text-color-60)
 }
 
@@ -409,7 +409,13 @@ nav li a:hover {
  margin: auto;
 }
 
-
+/* --- NEGOCIOS (SOLUCIONES PARA NEGOCIOS) --- */
+.grid_list{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 8px;
+}
+/* --- NEGOCIOS (SOLUCIONES PARA NEGOCIOS) --- */
 
 
 /* --- Footer --- */
