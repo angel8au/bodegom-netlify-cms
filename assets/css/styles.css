@@ -386,20 +386,44 @@ nav li a:hover {
 
 
 /* --- CARDS --- */
+.card {
+  display: grid;
+  box-shadow: var(--card-elevation);
+  border-radius: var(--card-border-radius);
+  border: 1px solid rgba(0, 0, 0, 0.16);}
+/* --- Hacer clickeable la card (a nest a div-)-- */
+a.card {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+a.card.disabled,
+a.card[disabled] {
+  pointer-events: none;
+  opacity: .8;
+}
+/* --- a--- */
+
+
 .card-list{
   display: grid;
   grid-gap: 8px;
   grid-template-columns: 1fr 1fr 
   }
 
-.card {
-  display: grid;
-  box-shadow: var(--card-elevation);
-  border-radius: var(--card-border-radius);
-  border: 1px solid rgba(0, 0, 0, 0.2);
    
  }
-  
+ .card--link {
+  position: absolute;
+  top: 0; 
+  left: 0;
+  height: 100%; 
+  width: 100%;
+  z-index: 1;
+	opacity: 0;
+ }
+ 
+
  .card:hover {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.24);
  }
@@ -407,6 +431,13 @@ nav li a:hover {
 .center {
  text-align: center;
  margin: auto;
+}
+@media screen and (min-width: 1024px) {
+  .card-list{
+    display: grid;
+    grid-gap: 24px;
+    grid-template-columns: 1fr 1fr 
+    }
 }
 
 /* --- NEGOCIOS (SOLUCIONES PARA NEGOCIOS) --- */
@@ -641,9 +672,6 @@ nav li a:hover {
 .my-float{
 	margin-top:16px;
 }
-
-
-
 
 
 
