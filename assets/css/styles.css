@@ -227,7 +227,7 @@ said applies to this layer:------------------ */
 
 .container {
   width: 100%;
-  max-width: 1024px;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }  
@@ -260,7 +260,7 @@ said applies to this layer:------------------ */
   color: #FFF;
   content: counter(step-counter);
   display: inline-block;
-  font-size: .618em;
+  font-size: 18px;
   line-height: 1.618em;
   text-align: center;
   top: -.236em;
@@ -299,6 +299,23 @@ said applies to this layer:------------------ */
       grid-template-columns: 1fr 1fr 1fr;
     }
     }
+
+    /* --- grid-beneficios 1fr  - mb 3fb desktop --- */
+
+    /* --- grid-beneficios 1fr  - mb 1fr 1fr desktop --- */
+    .grid_1-2 {
+      display: grid;
+      grid-template-columns: 1f;
+      grid-gap: var(--medida1);
+      
+      align-items: center;
+    }
+    @media screen and (min-width: 480px) {
+      .grid_1-2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+      }
   
 
 
@@ -663,6 +680,9 @@ a.card[disabled] {
 .mb-3 {
   margin-bottom: var(--medida3);
 }
+.mb-3 .important{
+  margin-bottom: var(--medida3);
+}
 .mb-4 {
   margin-bottom: var(--medida4);
 }
@@ -702,10 +722,10 @@ a.card[disabled] {
   padding-top: var(--medida4);
 }
 
-/* --- DISPLAY SETTINGS --- */
+/* --- DISPLAY SETTINGS 
 .center {
   margin: auto;
-}
+}--- */
 
 .d-flex {
   display: flex;
