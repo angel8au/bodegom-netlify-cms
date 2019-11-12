@@ -262,7 +262,6 @@ said applies to this layer:------------------ */
   display: inline-block;
   font-size: .618em;
   line-height: 1.618em;
-  position: relative;
   text-align: center;
   top: -.236em;
   width: 1.618em;
@@ -281,9 +280,26 @@ said applies to this layer:------------------ */
   }
   }
 
-  /* --- grid 1fr - mb 3fb desktop --- */
+  /* --- grid 1fr  - mb 3fb desktop --- */
 
 
+
+  /* --- grid-beneficios 1fr  - mb 3fb desktop --- */
+
+  .grid_beneficios {
+    display: grid;
+    grid-template-columns: 1f;
+    grid-gap: var(--medida1);
+    justify-items: center;
+    align-items: center;
+  }
+  @media screen and (min-width: 834px) {
+    .grid_beneficios {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    }
+  
 
 
 
