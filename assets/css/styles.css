@@ -326,7 +326,7 @@ said applies to this layer:------------------ */
   grid-template-columns: 1fr;
   grid-gap: var(--medida1);
  }
- @media screen and (min-width: 834px) {
+ @media screen and (min-width: 480px) {
   .product_list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
