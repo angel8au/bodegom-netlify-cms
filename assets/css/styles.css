@@ -244,6 +244,7 @@ said applies to this layer:------------------ */
   justify-items: center;
   align-items: center;
   list-style: none;
+  padding-inline-start: 0px;
 }
 .custom-counter li {
   counter-increment: step-counter;
@@ -273,7 +274,7 @@ said applies to this layer:------------------ */
   display: flex;
   align-self: center;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 834px) {
   .gird_1_3 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
