@@ -236,8 +236,51 @@ said applies to this layer:------------------ */
  }
 }
 
+/* --- grid 1fr - mb 3fb desktop --- */
+.gird_1_3 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: var(--medida1);
+  justify-items: center;
+  align-items: center;
+  list-style: none;
+}
+.custom-counter li {
+  counter-increment: step-counter;
+}
 
 
+.gird_1_3 .item {
+  align-self: center;
+}
+.gird_1_3 h3::before {
+  background-color: var(--naranja-bodegom);
+  border-radius: 50%;
+  color: #FFF;
+  content: counter(step-counter);
+  display: inline-block;
+  font-size: .618em;
+  line-height: 1.618em;
+  position: relative;
+  text-align: center;
+  top: -.236em;
+  width: 1.618em;
+  margin-right: .618em;
+
+}
+
+.gird_1_3 .item img{
+  display: flex;
+  align-self: center;
+}
+@media screen and (min-width: 1024px) {
+  .gird_1_3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  }
+
+  /* --- grid 1fr - mb 3fb desktop --- */
 
 
 
@@ -390,7 +433,7 @@ nav li a:hover {
   display: grid;
   box-shadow: var(--card-elevation);
   border-radius: var(--card-border-radius);
-  border: 1px solid rgba(0, 0, 0, 0.16);}
+  border: 0px solid rgba(0, 0, 0, 0.16);}
 /* --- Hacer clickeable la card (a nest a div-)-- */
 a.card {
   color: inherit;
@@ -412,7 +455,7 @@ a.card[disabled] {
   }
 
    
- }
+ 
  .card--link {
   position: absolute;
   top: 0; 
