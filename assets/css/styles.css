@@ -688,7 +688,7 @@ a.card[disabled] {
 }
 
 .mt-4 {
-  margin-bottom: var(--medida4);
+  margin-top: var(--medida4);
 }
 
 
@@ -716,6 +716,9 @@ a.card[disabled] {
 
 .p-2 {
   padding: var(--medida2);
+}
+.p-3 {
+  padding: var(--medida3);
 }
 
 .pt-4 {
