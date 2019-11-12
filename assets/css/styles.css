@@ -314,13 +314,26 @@ said applies to this layer:------------------ */
       .grid_1-2 {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        grid-gap: var(--medida3);
       }
       }
   
 
 
-
-
+/* --- Product list (bodegas) other page --- */
+ .product_list {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: var(--medida1);
+ }
+ @media screen and (min-width: 834px) {
+  .product_list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: var(--medida3);
+  }
+}
+ /* --- Product list (bodegas) other page --- */
 
 
 
@@ -725,6 +738,10 @@ a.card[disabled] {
   padding-top: var(--medida4);
 }
 
+.pb-4 {
+  padding-bottom: var(--medida4);
+}
+
 /* --- DISPLAY SETTINGS 
 .center {
   margin: auto;
@@ -774,20 +791,3 @@ a.card[disabled] {
 
   
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
