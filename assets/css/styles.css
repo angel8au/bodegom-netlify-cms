@@ -16,6 +16,7 @@ MEDIA QUERY: SE ESTA PONIENDO UNO PARA TODOS LOS ELEMENTOS Y PARA CADA UNO DE LO
 :root{
 /* --- colores --- */
 --azul-bodegom: #00357E;
+--azul-bodegom-lighter: #1387DE;
 --azul-bodegom-darker: rgb(2, 41, 60);
 --naranja-bodegom: #E77122;
 --background-color: #FFF;
@@ -642,8 +643,18 @@ a.card[disabled] {
 /* --- Footer --- */
 
 
-
-
+/* --- blog hero --- */
+.blog_hero {
+  background-color: var(--azul-bodegom-lighter) ;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: white
+}
 
 
 
