@@ -279,7 +279,11 @@ said applies to this layer:------------------ */
   margin-right: .618em;
 
 }
-
+.gird_1_3_img {
+  display: grid;
+  text-align: center;
+  margin: auto;
+}
 .gird_1_3 .item img{
   display: flex;
   align-self: center;
