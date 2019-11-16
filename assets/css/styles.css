@@ -646,7 +646,7 @@ a.card[disabled] {
   color: var(--naranja-bodegom);
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 648px) {
   .footer__lg-ul--row {
     display: flex;
     text-decoration: none;
@@ -659,7 +659,7 @@ a.card[disabled] {
   }  
 
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 648px) {
   .footer__grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr ;
