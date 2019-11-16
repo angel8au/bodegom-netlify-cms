@@ -186,8 +186,8 @@ a {
     margin: 0px;
     padding: 0px;
     font-style: normal;
-    font-weight: 600;
-    font-size: 60px;
+    font-weight: 700;
+    font-size: 76px;
     line-height: 1em;
     color: var(--text-color-white);
   }
@@ -201,6 +201,7 @@ a {
   
   h4 {
     font-size: 22px;
+    color: var(--text-color-87)
   }
   
   p {
@@ -213,9 +214,19 @@ a {
   }
   }  
 
+  @media screen and (min-width: 1281px) {
 
+    h1 {
+      margin: 0px;
+      padding: 0px;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 96px;
+      line-height: 1em;
+      color: var(--text-color-white);
+    }
 
-
+  }
 
 
 /* ----------------- OBJECT LAY OUT CLASES 
@@ -299,7 +310,7 @@ said applies to this layer:------------------ */
 
 
 
-  /* --- grid-beneficios 1fr  - mb 3fb desktop --- */
+  /* --- grid-beneficios 1fr sm - 3fb m --- */
 
   .grid_beneficios {
     display: grid;
@@ -315,9 +326,11 @@ said applies to this layer:------------------ */
     }
     }
 
-    /* --- grid-beneficios 1fr  - mb 3fb desktop --- */
+    /* --- grid-beneficios 1fr sm - 3fb m  --- */
 
-    /* --- grid-beneficios 1fr  - mb 1fr 1fr desktop --- */
+    /* --- grid-mapa- 2 columnas en escritorio
+    y una columna en celular  
+    1fr  - mb 1fr 1fr desktop --- */
     .grid_1-2 {
       display: grid;
       grid-template-columns: 1f;
@@ -507,6 +520,10 @@ a.card[disabled] {
   pointer-events: none;
   opacity: .8;
 }
+.card_img {
+  width: 100%;
+  max-width: 128px;
+}
 /* --- a--- */
 
 
@@ -516,8 +533,7 @@ a.card[disabled] {
   grid-template-columns: 1fr 1fr 
   }
 
-   
- 
+  
  .card--link {
   position: absolute;
   top: 0; 
@@ -734,6 +750,12 @@ article a:hover {
   color: var(--text-color-87);
   margin-bottom: var(--medida4);
 }
+
+@media screen and (min-width: 1024px) {
+  .post h1 {
+    font-size: 46px;
+  }
+}
 .post img {
   width: 100%;
 }
@@ -830,9 +852,13 @@ article a:hover {
 
   .mb-lg-100 {
    margin-bottom: 100px;
+  }
+  .mt-lg-100 {
+    margin-top: 100px;
+  }
  }
  
- }  
+   
  
 
 /* --- PADDINGS --- */

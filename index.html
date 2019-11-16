@@ -79,16 +79,27 @@
 
               <a href="negocios.html" class="card">
                   <div class="card p-2">
-                      <img class="pb-1 center" src="assets/images/empresas.jpg" alt="Soluciones para Negocios" >
-                        <p>Soluciones para Negocios</p>
+                      <picture  alt="Soluciones para Negocios">
+                          <source media="(min-width: 650px)"  srcset="assets/images/negocios-lg.jpg">
+                          
+                            <img src="assets/images/empresas.jpg"  alt="Soluciones para Negocios">
+                        </picture>
+                     
+                        <h4>Soluciones para Negocios</h4>
                   </div>
               </a>
 
               <!-- Card solucion de hogar-->
               <a href="hogar.html" class="card">
                   <div class="card card-body p-2">
-                      <img class="center pb-1" src="assets/images/hogar.jpg" alt="Soluciones para Hogar" >
-                      <p class="text-title">Soluciones para Personas</p>
+                      <picture  alt="Soluciones para Negocios">
+                          <source media="(min-width: 650px)"  srcset="assets/images/personal-lg.jpg">
+                          
+                            <img src="assets/images/hogar.jpg"  alt="Soluciones para Personas">
+                        </picture>
+                     
+                     
+                      <h4 class="text-title">Soluciones para Personas</h4>
                   </div>
               </a>
       
@@ -97,14 +108,14 @@
     </div>
   </section>
   <section style="background-color: #FAFAFA;">
-    <div class="container p-0 important">
+    <div class="container p-0 important ">
       <div class="center mb-1 col-5 center p-0">
        
          <h2 class="mb-0 mt-4">CONTRATA TU BODEGA</h2>
          <h4 class="mb-4">EN SOLO UNOS MINUTOS</h4>
          
      </div>
-     <ol class="gird_1_3 custom-counter p-0">
+     <ol class="gird_1_3 custom-counter p-0 ">
         <li class="item ">
           <h3 class="mb-2 ">Elige una bodega</h3>
           <a href="/bodegas/index.html">
@@ -121,7 +132,7 @@
        </li>
        
       </ol>
-      <div class="center">
+      <div class="center mb-4">
         <p class=" mb-2">1. Elige una bodega</p>
         <a href="bodegas">
             <button class="center " style="display: flex;" >VER BODEGAS</button>
@@ -133,7 +144,7 @@
    </div>
   </section>
   <section class="pt-4" style="background-color: rgb(131, 131, 131);">
-      <div class="container p-0 important">
+      <div class="container p-0 important ">
         <div class="center mb-1 col-5 center p-0 ">
          
            <h2 class="mb-0 text-color-white">BENEFICIOS</h2>
@@ -142,7 +153,7 @@
              más frescas </p>
            
        </div>
-       <div class="grid_beneficios  p-0">
+       <div class="grid_beneficios mb-4 p-0">
           <div class="center">
               <img class="beneficios_img pb-1 " src="assets/images/acceso-grande.png" alt="acceso grande">
               <h3 class="mb-2 text-color-white">Acceso grande para trailers y maniobra</h3>
@@ -185,9 +196,9 @@
          </div>
     </div>
   </section>
-  <section style="background-color: rgba(19, 135, 222, 1);">
+  <section class="d-flex" style="background-color: rgba(19, 135, 222, 1);">
           <div class="container">
-            <h2 class="center text-color-white mb-3 important mt-4">Ten más espacio con bodegom</h2>
+            <h2 class="center text-color-white mb-4 important mt-4 mt-lg-100">Ten más espacio con bodegom</h2>
             <a href="bodegas">
             <button class="center mb-3 important" style="display: flex;">VER BODEGAS</button>
           </a>
@@ -196,7 +207,7 @@
         <picture>
             <source media="(min-width: 650px)" srcset="assets/images/minibodegas-desktop.jpg">
             
-              <img src="assets/images/bodegas.png" style="width: 100%;"alt="Mini Bodegas Culiacan">
+              <img src="assets/images/bodegas.png" style="width: 100%; "alt="Mini Bodegas Culiacan">
           </picture>
         
         </section>
@@ -209,15 +220,15 @@
     <div class="container ">
         <div class="footer__grid mt-4">
        
-            <div class="footer__grid-item">
+            <div class="mb-4">
               <img  class="mb-3" src="assets/images/old-logo-bodegom.svg" alt="Logo Bodegom Mini bodegas">
-              <h4 class="text-color-white mb-2 p-p mb-3">EL ESPACIO EXTRA QUE NECESITAS</h4>
+              <h5 class="text-color-white">EL ESPACIO EXTRA QUE NECESITAS</h5>
             </div>
     
-            <div class="footer__grid-item" >
-               
-                <ul class="footer__ul--col footer__lg-ul--row mb-4">
-                   
+            <div  >
+                <h4 class="text-color-white mb-3">NAVEGACION</h4>
+                <ul class="footer__ul--row mb-4">
+                    
                     <li><a href="negocios">Negocios</a></li>
                     <li><a href="personal">Personal</a></li>
                     <li><a href="bodegas">Bodegas</a></li>
@@ -225,9 +236,9 @@
                   </ul>
             </div>
     
-           <div class="footer__grid-item mb-3">
-             <h4 class="text-color-white mb-2">Siguenos:</h4>
-             <ul class="footer__ul--col footer__lg-ul--row">
+           <div >
+             <h4 class="text-color-white mb-3">SIGUENOS</h4>
+             <ul class="footer__ul--row mb-4">
                   
                 <li><a href="#">Facebook</a></li>
                 <li><a href="#">Youtube</a></li>
@@ -237,9 +248,9 @@
                
            </div>
            
-           <div class="footer__grid-item">
-              <h4 class="text-color-white mb-2">Contáctanos:</h4>
-              <ul class="footer__ul--row">
+           <div >
+              <h4 class="text-color-white mb-3">Contáctanos:</h4>
+              <ul class="footer__ul--row mb-4">
                   
                   <li><a href="#">(667) 749 7061</a></li>
                   <li><a href="#">Calzada Heroico Colegio Militar 3991</a></li>
