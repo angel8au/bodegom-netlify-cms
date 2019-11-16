@@ -130,7 +130,7 @@ h4 {
   color: var(--text-color-87);
   font-style: normal;
   font-weight: normal;
-  font-size: 15px;
+  font-size: 18px;
   line-height: 20px;;
 }
 h5 {
@@ -549,10 +549,11 @@ a.card[disabled] {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.24);
  }
 
-.center {
- text-align: center;
- margin: auto;
-}
+
+
+
+ /* --- CARDS --- */
+
 @media screen and (min-width: 1024px) {
   .card-list{
     display: grid;
@@ -583,7 +584,7 @@ a.card[disabled] {
   grid-gap: 8px;  
   margin: 0 auto;
   max-width: 100%;
-  color: white;
+  color: rgba(255, 255, 255, 0.87);
   align-self: auto;
 }
 
@@ -626,13 +627,12 @@ a.card[disabled] {
   display: grid;
   grid-gap: 16px;
   font-style: normal;
-  font-size: 18px;
-  font-weight: 600;
+  
   line-height: 24px;
   display: flex;
   align-items: center;
   text-decoration-line: none;
-  color: var(--text-color-white);
+  color: rgba(255, 255, 255, 0.80);
 }
 
 .footer a:hover {
@@ -792,6 +792,16 @@ article a:hover {
 
 /* ----------------- UTILITIES ------------------ */
 /* lo que hace que el navbar se quede hasta arriba*/
+
+.img-100 {
+  width: 100%;
+  line-height: 0;
+}
+.center {
+  text-align: center;
+  margin: auto;
+ }
+
 .sticky {
   position: fixed;
   top: 0;
@@ -809,6 +819,10 @@ article a:hover {
 /* --- TEXT COLOR --- */
 .text-color-white {
   color: var(--text-color-white);
+}
+/* --- TEXT COLOR --- */
+.text-color-white-87 {
+  color: rgba(255, 255, 255, 0.87);
 }
 
 /* --- MARGINS --- */
