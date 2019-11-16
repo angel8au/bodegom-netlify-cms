@@ -240,23 +240,30 @@ said applies to this layer:------------------ */
 
  /* --- LAY OUT --- */
  .container {
+  margin-right: auto;
+  margin-left: auto;
   padding: var(--medida2);
 } 
-
+.col-12 {
+  width: 100%;
+}
 
 
 @media screen and (min-width: 1024px) {
 
 .container {
-  width: 100%;
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 1200px; 
 }  
+
 .col-5 {
   width: 58%;
- }
+ 
 }
+
+
+
+}
+
 
 /* --- grid 1fr - mb 3fb desktop --- */
 .gird_1_3 {
@@ -639,7 +646,7 @@ a.card[disabled] {
   color: var(--naranja-bodegom);
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 800px) {
   .footer__lg-ul--row {
     display: flex;
     text-decoration: none;
@@ -652,7 +659,7 @@ a.card[disabled] {
   }  
 
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 800px) {
   .footer__grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr ;
