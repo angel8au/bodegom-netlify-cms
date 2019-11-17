@@ -244,6 +244,13 @@ said applies to this layer:------------------ */
   margin-left: auto;
   padding: var(--medida2);
 } 
+
+.container2 {
+  border: 16px solid #e8e8e8;
+  margin-right: auto;
+  margin-left: auto;
+ ;
+} 
 .col-12 {
   width: 100%;
 }
@@ -254,6 +261,10 @@ said applies to this layer:------------------ */
 .container {
   max-width: 1200px; 
 }  
+.container2 {
+  max-width: 1200px; 
+  
+} 
 
 .col-5 {
   width: 58%;
@@ -482,7 +493,9 @@ nav li a:hover {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  color: white
+  color: white;
+  
+  
 }
 @media screen and (min-width: 480px) {
 
@@ -496,14 +509,10 @@ nav li a:hover {
 
 .main_section {
   background-image: url(../images/lg-fondo-bodegom.jpg) ;
-  background-position: center;
-  background-repeat: no-repeat;
+  
   height: 88vh;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  color: white
+  
+  
 }
 }
 
@@ -913,6 +922,14 @@ article a:hover {
   margin: auto;
 }--- */
 
+
+    .d-flex-row {
+      display: flex;
+      flex-direction: row;
+    align-content: flex-end;
+      flex-wrap: wrap;
+    }
+
 .d-flex {
   display: flex;
   flex-direction: column;
@@ -956,4 +973,3 @@ article a:hover {
   -webkit-font-smoothing: antialiased;
 
   
-}
