@@ -29,7 +29,7 @@ MEDIA QUERY: SE ESTA PONIENDO UNO PARA TODOS LOS ELEMENTOS Y PARA CADA UNO DE LO
 --card-elevation: 0px 4px 8px rgba(0, 0, 0, 0.12);
 
 /* --- border-radius --- */
---card-border-radius: 10px;
+--card-border-radius: 30px;
 
 /* --- typografia --- */
 --font-family: "Open Sans",  sans-serif;
@@ -249,6 +249,7 @@ said applies to this layer:------------------ */
   border: 16px solid #e8e8e8;
   margin-right: auto;
   margin-left: auto;
+  align-items: flex-end;
  ;
 } 
 .col-12 {
@@ -928,6 +929,7 @@ article a:hover {
       flex-direction: row;
     align-content: flex-end;
       flex-wrap: wrap;
+      align-items: flex-end;
     }
 
 .d-flex {
