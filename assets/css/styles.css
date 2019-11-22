@@ -29,7 +29,7 @@ MEDIA QUERY: SE ESTA PONIENDO UNO PARA TODOS LOS ELEMENTOS Y PARA CADA UNO DE LO
 --card-elevation: 0px 4px 8px rgba(0, 0, 0, 0.12);
 
 /* --- border-radius --- */
---card-border-radius: 30px;
+--card-border-radius: 25px;
 
 /* --- typografia --- */
 --font-family: "Open Sans",  sans-serif;
@@ -199,6 +199,7 @@ a {
     color: var(--text-color-87)
   }
   
+  
   h4 {
     font-size: 22px;
     color: var(--text-color-87)
@@ -348,7 +349,7 @@ said applies to this layer:------------------ */
 /* --- grid-beneficios 1fr sm - 3fb m  --- */
 
 /* --- grid-mapa- 2 columnas en escritorio
-y una columna en celular  
+PAGINA DE PRODUCTO 
 1fr  - mb 1fr 1fr desktop --- */
 .grid_product {
   display: grid;
@@ -356,17 +357,30 @@ y una columna en celular
   grid-gap: var(--medida1);
   
 }
+.h3-precio {
+  font-size: 22px;
+  color: var(--azul-bodegom-lighter);
+}
+
 @media screen and (min-width: 768px) {
-  .grid_product {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-gap: var(--medida3);
-  }
-  }
+.grid_product {
+  display: grid;
+  grid-template-columns: 62% 1fr;
+  grid-gap: var(--medida3);
+}
+.h3-precio {
+  font-size: 36px;
+  color: var(--azul-bodegom-lighter);
+}
+}
   
 
 
-/* --- Product list (bodegas) other page --- */
+/* --- Product page (bodegas) other page --- */
+.a:hover {
+  text-decoration: underline;
+  
+}
  .product_list {
   display: grid;
   grid-template-columns: 1fr;
@@ -872,6 +886,13 @@ article a:hover {
 /* --- TEXT COLOR --- */
 .text-color-white {
   color: var(--text-color-white);
+}
+
+.text-color-87 {
+  color: var(--text-color-87);
+}
+.text-color-60 {
+  color: var(--text-color-60);
 }
 /* --- TEXT COLOR --- */
 .text-color-white-87 {
