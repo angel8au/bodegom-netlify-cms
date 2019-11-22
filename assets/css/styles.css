@@ -453,7 +453,33 @@ button {
     border-width: 0px;
   }
   
- 
+.button--secundary {
+  background: #FFFFFF;
+  border: 2px solid var(--naranja-bodegom);
+  box-sizing: border-box;
+  border-radius: 180px;
+  color: var(--text-color-87);
+ }
+ .button--secundary:hover {
+  background: #FFFFFF;
+  border: 2px solid var(--naranja-bodegom);
+  box-sizing: border-box;
+  border-radius: 180px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.12);
+  color: var(--text-color-87);
+ }
+.button--whatsapp {
+  background: #25d366;
+  box-sizing: border-box;
+  border-radius: 180px;
+  color: #FFF;
+ }
+ .button--whatsapp:hover {
+  background: #1a9c4a;
+  box-sizing: border-box;
+  border-radius: 180px;
+  color: #FFF;
+ }
 /* --- NAVBAR --- */
 
 nav {
