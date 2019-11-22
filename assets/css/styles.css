@@ -345,25 +345,24 @@ said applies to this layer:------------------ */
     }
     }
 
-    /* --- grid-beneficios 1fr sm - 3fb m  --- */
+/* --- grid-beneficios 1fr sm - 3fb m  --- */
 
-    /* --- grid-mapa- 2 columnas en escritorio
-    y una columna en celular  
-    1fr  - mb 1fr 1fr desktop --- */
-    .grid_1-2 {
-      display: grid;
-      grid-template-columns: 1f;
-      grid-gap: var(--medida1);
-      
-      align-items: center;
-    }
-    @media screen and (min-width: 480px) {
-      .grid_1-2 {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: var(--medida3);
-      }
-      }
+/* --- grid-mapa- 2 columnas en escritorio
+y una columna en celular  
+1fr  - mb 1fr 1fr desktop --- */
+.grid_product {
+  display: grid;
+  grid-template-columns: 1f;
+  grid-gap: var(--medida1);
+  
+}
+@media screen and (min-width: 768px) {
+  .grid_product {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: var(--medida3);
+  }
+  }
   
 
 
@@ -382,7 +381,23 @@ said applies to this layer:------------------ */
 }
  /* --- Product list (bodegas) other page --- */
 
-
+ /* --- grid-mapa- 2 columnas en escritorio
+    y una columna en celular  
+    1fr  - mb 1fr 1fr desktop --- */
+    .grid_1-2 {
+      display: grid;
+      grid-template-columns: 1f;
+      grid-gap: var(--medida1);
+      
+      align-items: center;
+    }
+    @media screen and (min-width: 480px) {
+      .grid_1-2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: var(--medida3);
+      }
+      }
 
 
 /* ----------------- COMPONENTS ------------------ */
