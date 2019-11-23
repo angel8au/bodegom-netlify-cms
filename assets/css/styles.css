@@ -886,6 +886,10 @@ article a:hover {
 /* ----------------- UTILITIES ------------------ */
 /* lo que hace que el navbar se quede hasta arriba*/
 
+
+.border-radius {
+  border-radius: 30px;
+}
 .img-100 {
   width: 100%;
   line-height: 0;
