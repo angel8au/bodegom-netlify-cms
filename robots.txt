@@ -1,2 +1,4 @@
 User-Agent: *
 Disallow: 
+
+Sitemap: https://bodegom.com.mx/sitemap.xml
