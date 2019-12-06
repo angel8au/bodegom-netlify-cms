@@ -16,8 +16,29 @@
 <url>
   <loc>https://www.bodegom.com.mx/bodegas/</loc>
   <lastmod>2019-12-05T22:57:43+00:00</lastmod>
+  <priority>0.91</priority>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+<url>
+  <loc>https://www.bodegom.com.mx/bodegas/grande</loc>
+  <lastmod>2019-12-05T22:57:43+00:00</lastmod>
   <priority>0.90</priority>
-  <changefreq>yearly</changefreq>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+<url>
+  <loc>https://www.bodegom.com.mx/bodegas/chica</loc>
+  <lastmod>2019-12-05T22:57:43+00:00</lastmod>
+  <priority>0.90</priority>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+<url>
+  <loc>https://www.bodegom.com.mx/bodegas/mediana</loc>
+  <lastmod>2019-12-05T22:57:43+00:00</lastmod>
+  <priority>0.90</priority>
+  <changefreq>monthly</changefreq>
 </url>
 <url>
   <loc>https://www.bodegom.com.mx/blog/</loc>
@@ -40,8 +61,49 @@
 <url>
   <loc>https://www.bodegom.com.mx/blog/5-pasos-acabar-desorden-en-casa</loc>
   <lastmod>2019-12-05T22:57:43+00:00</lastmod>
-  <priority>0.64</priority>
+  <priority>0.79</priority>
+  <changefreq>monthly</changefreq>
 </url>
-
-
+<url>
+  <loc>https://www.bodegom.com.mx/blog/como-proteger-tus-muebles-en-una-mudanza</loc>
+  <lastmod>2019-12-05T22:57:43+00:00</lastmod>
+  <priority>0.79</priority>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>https://www.bodegom.com.mx/blog/10-consejos-sobre-dinero-que-todo-dueno-de-empresa-debe-conocer</loc>
+  <lastmod>2019-12-05T22:57:43+00:00</lastmod>
+  <priority>0.79</priority>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>https://www.bodegom.com.mx/blog/10-consejos-para-organizar-tu-cochera</loc>
+  <lastmod>2019-12-05T22:57:43+00:00</lastmod>
+  <priority>0.79</priority>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>https://www.bodegom.com.mx/blog/los-problemas-del-papel-en-la-oficina</loc>
+  <lastmod>2019-12-05T22:57:43+00:00</lastmod>
+  <priority>0.79</priority>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>https://www.bodegom.com.mx/blog/lo-malo-de-las-remodelaciones</loc>
+  <lastmod>2019-12-05T22:57:43+00:00</lastmod>
+  <priority>0.79</priority>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>https://www.bodegom.com.mx/blog/empacar-para-una-mudanza-culiacan</loc>
+  <lastmod>2019-12-05T22:57:43+00:00</lastmod>
+  <priority>0.79</priority>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>https://www.bodegom.com.mx/blog/consejos-para-guardar-muebles-de-madera-culiacan</loc>
+  <lastmod>2019-12-05T22:57:43+00:00</lastmod>
+  <priority>0.79</priority>
+  <changefreq>monthly</changefreq>
+</url>
 </urlset>
