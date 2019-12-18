@@ -964,7 +964,14 @@ article a:hover {
 }
 
 
+ /* ------------------------------------ tablets 1024 --- */
+@media screen and (min-width: 730px) {
+
+  .hidde-desktop {
+   display: none;
+  }
   
+ } 
 /* ------------------------------------ tablets 1024 --- */
 @media screen and (min-width: 1024px) {
 
@@ -1004,6 +1011,14 @@ article a:hover {
 .pb-4 {
   padding-bottom: var(--medida4);
 }
+
+.pl-1 {
+  padding-left: var(--medida1);
+}
+.pr-1 {
+  padding-right: var(--medida1);
+}
+
 
 /* --- DISPLAY SETTINGS 
 .center {
