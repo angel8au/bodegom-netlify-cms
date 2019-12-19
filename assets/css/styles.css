@@ -961,8 +961,10 @@ article a:hover {
 
 .mt-4 {
   margin-top: var(--medida4);
-}
 
+}.ml-3 {
+  margin-left: var(--medida3);
+}
 
  /* ------------------------------------ tablets 1024 --- */
 @media screen and (min-width: 730px) {
@@ -1025,14 +1027,22 @@ article a:hover {
   margin: auto;
 }--- */
 
+.d-flex-row {
+  display: flex;
+  flex-direction: row;
+}
 
-    .d-flex-row {
-      display: flex;
-      flex-direction: row;
-    align-content: flex-end;
-      flex-wrap: wrap;
-      align-items: flex-end;
-    }
+.d-flex-row__bottom {
+  align-content: flex-end;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+
+.d-flex-row__center {
+  align-content: flex-end;
+  flex-wrap: wrap;
+  align-items: center;
+}
 
 .d-flex {
   display: flex;
