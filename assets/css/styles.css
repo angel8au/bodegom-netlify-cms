@@ -5,7 +5,7 @@
 #  /·/__(__··|__··)·
 #  \___/____/____/··
 #  ··ITCSS-BEM·········
-REGLA: SE ESTA USANDO ITCSS
+REGLA: SE ESTA USANDO "ITCSS"
 MEDIA QUERY: SE ESTA PONIENDO UNO PARA TODOS LOS ELEMENTOS Y PARA CADA UNO DE LOS COMPONENTES AGURPADAENTE
 
 */
@@ -72,20 +72,6 @@ html, body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ---------------------- ELEMENTS ------------------ */
 
 /* ------------------ TYPOGRAFIA --- */
@@ -100,8 +86,6 @@ h1 {
   line-height: 1.333;
   color: var(--text-color-white);
 }
-
-
 
 h2 {
   margin: 0px;
@@ -121,9 +105,6 @@ h3 {
   color: var(--text-color-87);
 }
 
-
-
-
 h4 {
   margin: 0px;
   padding: 0px;
@@ -133,10 +114,12 @@ h4 {
   font-size: 18px;
   line-height: 20px;;
 }
+
 h5 {
   margin: 0px;
   padding: 0px;
 }
+
 p {
   margin: 0px;
   padding: 0px;
@@ -144,7 +127,6 @@ p {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.618;
-  
   color: var(--text-color-60)
 }
 
@@ -550,9 +532,9 @@ nav li a:hover {
   -o-background-size: cover;
   background-size: cover;
   color: white;
-  
-  
+  background-color: var(--azul-bodegom-lighter) 
 }
+
 @media screen and (min-width: 480px) {
 
   .main_section {
