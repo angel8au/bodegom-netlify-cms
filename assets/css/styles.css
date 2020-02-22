@@ -312,7 +312,7 @@ said applies to this layer:------------------ */
 
 
 
-  /* --- grid-beneficios 1fr sm - 3fb m --- */
+  /* --- grid-ficios 1fr sm - 3fb m --- */
 
   .grid_beneficios {
     display: grid;
@@ -395,7 +395,98 @@ PAGINA DE PRODUCTO
       }
       }
 
+ /* --- grid-negocios 1fr sm - 3fb m --- */
 
+  .grid_negocios--imagen {
+    order: 1;
+  }
+
+  .grid_negocios--texto {
+    order: 2;
+  }
+  
+
+@media screen and (min-width: 834px) {
+  
+  .grid_negocios--imagen {
+    order: 2;
+  }
+
+  .grid_negocios--texto {
+    order: 1;
+  }
+  }
+
+/* --- grid-negocios 1fr sm - 2fb desktop --- */
+
+/* --- grid 1fr - mb 3fb desktop --- */
+.gird_1_4 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: var(--medida1);
+  justify-items: center;
+  align-items: center;
+  list-style: none;
+  padding-inline-start: 0px;
+}
+.custom-counter li {
+  counter-increment: step-counter;
+}
+
+
+.gird_1_4 .item {
+  align-self: center;
+}
+.gird_1_4 h3::before {
+  background-color: var(--naranja-bodegom);
+  border-radius: 50%;
+  color: #FFF;
+  display: inline-block;
+  font-size: 18px;
+  line-height: 1.618em;
+  text-align: center;
+  top: -.236em;
+  width: 1.618em;
+  margin-right: .618em;
+
+}
+.gird_1_4_img {
+  display: grid;
+  text-align: center;
+  margin: auto;
+}
+.gird_1_4 .item img{
+  display: flex;
+  align-self: center;
+}
+@media screen and (min-width: 834px) {
+  .gird_1_4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  }
+
+  /* --- grid 1fr  - mb 3fb desktop --- */
+
+
+
+  /* --- grid-ficios 1fr sm - 3fb m --- */
+
+  .grid_beneficios {
+    display: grid;
+    grid-template-columns: 1f;
+    grid-gap: var(--medida1);
+    justify-items: center;
+    align-items: center;
+  }
+  @media screen and (min-width: 834px) {
+    .grid_beneficios {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr ;
+    }
+    }
+
+/* --- grid-beneficios 1fr sm - 4fb m  --- */
 /* ----------------- COMPONENTS ------------------ */
 
 
