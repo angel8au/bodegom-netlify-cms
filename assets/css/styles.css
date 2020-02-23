@@ -387,7 +387,7 @@ PAGINA DE PRODUCTO
       
       align-items: center;
     }
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 700px) {
       .grid_1-2 {
         display: grid;
         grid-template-columns: 1fr 1fr;
