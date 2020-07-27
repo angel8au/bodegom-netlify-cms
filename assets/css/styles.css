@@ -32,7 +32,7 @@ MEDIA QUERY: SE ESTA PONIENDO UNO PARA TODOS LOS ELEMENTOS Y PARA CADA UNO DE LO
 --card-border-radius: 25px;
 
 /* --- typografia --- */
---font-family: "Open Sans",  sans-serif;
+--font-family: Helvetica, "Open Sans",  sans-serif;
 
 /* --- spacing --- */
 --medida1: 8px;
@@ -127,8 +127,9 @@ p {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.618;
-  color: var(--text-color-60)
+  color: #333333;
 }
+
 
 a {
   text-decoration: none;
@@ -193,7 +194,7 @@ a {
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
-    color: var(--text-color-60)
+    color: #333333;
   }
   }  
 
@@ -917,7 +918,7 @@ article a:hover {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   margin: auto;
-  max-width: 680px;
+  max-width: 740px;
   word-break: break-word;
 }
 .post h1 {
@@ -1005,9 +1006,12 @@ article a:hover {
 .text-color-60 {
   color: var(--text-color-60);
 }
-/* --- TEXT COLOR --- */
+
 .text-color-white-87 {
   color: rgba(255, 255, 255, 0.87);
+}
+.text-color-light-blue {
+  color: var(--azul-bodegom-lighter);
 }
 
 /* --- MARGINS --- */
