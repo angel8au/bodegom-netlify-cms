@@ -124,10 +124,9 @@ p {
   margin: 0px;
   padding: 0px;
   font-style: normal;
-  font-weight: 500;
   font-size: 16px;
   line-height: 1.618;
-  color: #55555 ;
+  color: var(--text-color-60) ;
 }
 
 
@@ -192,7 +191,6 @@ a {
     margin: 0px;
     padding: 0px;
     font-style: normal;
-    font-weight: 500;
     font-size: 18px;
     color: var(--text-color-60);
   }
