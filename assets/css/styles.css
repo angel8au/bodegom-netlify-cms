@@ -24,10 +24,8 @@ MEDIA QUERY: SE ESTA PONIENDO UNO PARA TODOS LOS ELEMENTOS Y PARA CADA UNO DE LO
 --text-color-60:rgba(0, 0, 0, 0.60);
 --text-color-40:rgba(0, 0, 0, 0.40);
 --text-color-white: #FFF;
-
 /* --- box-shodow --- */
 --card-elevation: 0px 4px 8px rgba(0, 0, 0, 0.12);
-
 /* --- border-radius --- */
 --card-border-radius: 25px;
 
@@ -644,9 +642,6 @@ nav li a:hover {
 }
 }
 
-
-
-
 /* --- CARDS --- */
 .card {
   display: grid;
@@ -937,30 +932,6 @@ article a:hover {
   padding-inline-start: 0px;
   list-style: none;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* ----------------- UTILITIES ------------------ */
