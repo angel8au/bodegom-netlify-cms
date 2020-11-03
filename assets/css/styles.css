@@ -500,15 +500,16 @@ button {
     padding-left: 32px;
   
   /* texto*/
-    font-style: normal;
+    font-style: bold;
+    
     font-size: 14px;
     line-height: 16px;
     color: var(--text-color-white)
   }
   
   button a{
-    font-style: normal;
-    font-weight: 600;
+    font-style: bold;
+    
     font-size: 14px;
     line-height: 16px;
     color: white;
@@ -611,7 +612,7 @@ nav li a:hover {
 
 /* --- MAIN SECTION --- */
 .main_section {
-  background-image: url(../images/m-fondo-bodegom.jpg) ;
+  background-image: url(../images/BUENFIN-S.png) ;
   background-position: center;
   background-repeat: no-repeat;
   height: 360px;
@@ -626,7 +627,7 @@ nav li a:hover {
 @media screen and (min-width: 480px) {
 
   .main_section {
-    background-image: url(../images/m-fondo-bodegom.jpg) ;
+    background-image: url(../images/buenfin-m.png) ;
     height: 400px;
 }
 }
@@ -634,7 +635,7 @@ nav li a:hover {
 @media screen and (min-width: 1024px) {
 
 .main_section {
-  background-image: url(../images/lg-fondo-bodegom.jpg) ;
+  background-image: url(../images/buenfin-lg.jpg) ;
   
   height: 88vh;
   
@@ -1141,4 +1142,7 @@ article a:hover {
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
 
+}
+.ui-widget-header {
+  background: #FFFFFF ;
 }
