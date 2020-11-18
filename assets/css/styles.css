@@ -502,7 +502,7 @@ button {
   /* texto*/
     font-weight: 700;
     font-family: var(--font-family);
-    letter-spacing: 0.08em;
+    letter-spacing: 0.03em;
     font-size: 14px;
     line-height: 16px;
     color: var(--text-color-white)
