@@ -501,7 +501,7 @@ button {
   
   /* texto*/
     font-weight: 700;
-    
+    font-family: var(--font-family);
     font-size: 14px;
     line-height: 16px;
     color: var(--text-color-white)
