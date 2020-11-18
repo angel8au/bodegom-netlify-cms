@@ -554,7 +554,7 @@ button {
 /* --- NAVBAR --- */
 
 nav {
-  height: 58px;
+  height: 64px;
   background-color: white;
   box-shadow: var(--card-elevation);
   display: flex;
