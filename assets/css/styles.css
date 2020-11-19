@@ -1137,12 +1137,15 @@ article a:hover {
 
 
 }
-.fb_dialog {
-  position: -webkit-sticky !important;
-  position: fixed !important;
-  bottom: 72px !important;
-  
-  }
+/* ***************
+ * FB on left side 
+ ******************/
+/* this is for the circle position */
+.fb_dialog.fb_dialog_advanced {
+  bottom: 72pt;
+}
+
+
 
 /* --- icons style --- */
 .fa {
