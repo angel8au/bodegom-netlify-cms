@@ -1021,6 +1021,9 @@ article a:hover {
 }.ml-3 {
   margin-left: var(--medida3);
 }
+.mr-3 {
+  margin-right: var(--medida3);
+}
 
  /* ------------------------------------ tablets 1024 --- */
 @media screen and (min-width: 730px) {
@@ -1136,13 +1139,6 @@ article a:hover {
 }
 
 
-}
-/* ***************
- * FB on left side 
- ******************/
-/* this is for the circle position */
-.fb_dialog.fb_dialog_advanced {
-  bottom: 72pt;
 }
 
 
