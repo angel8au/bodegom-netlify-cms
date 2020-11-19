@@ -1135,6 +1135,14 @@ article a:hover {
 	margin-top:16px;
 }
 
+.floatfb{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:72px;
+	
+}
+
 /* --- icons style --- */
 .fa {
   display: inline-block;
