@@ -1135,13 +1135,14 @@ article a:hover {
 	margin-top:16px;
 }
 
-.floatfb{
-	position:fixed;
-	width:60px;
-	height:60px;
-	bottom:72px;
-	
+
 }
+.fb_dialog {
+  position: -webkit-sticky !important;
+  position: fixed !important;
+  bottom: 72px !important;
+  
+  }
 
 /* --- icons style --- */
 .fa {
