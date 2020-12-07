@@ -613,7 +613,7 @@ nav li a:hover {
 
 /* --- MAIN SECTION --- */
 .main_section {
-  background-image: url(../images/BUENFIN-S.png) ;
+  background-image: url(../images/fondo-bodegom.jpg) ;
   background-position: center;
   background-repeat: no-repeat;
   height: 360px;
@@ -628,7 +628,7 @@ nav li a:hover {
 @media screen and (min-width: 480px) {
 
   .main_section {
-    background-image: url(../images/buenfin-m.png) ;
+    background-image: url(../images/m-fondo-bodegom.jpg) ;
     height: 400px;
 }
 }
@@ -636,7 +636,7 @@ nav li a:hover {
 @media screen and (min-width: 1024px) {
 
 .main_section {
-  background-image: url(../images/buenfin-lg.jpg) ;
+  background-image: url(../images/lg-fondo-bodegom.jpg) ;
   
   height: 88vh;
   
