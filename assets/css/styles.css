@@ -1153,6 +1153,7 @@ article a:hover {
   display: inline-block;
   font: normal normal normal 14px/1 ;
   font-size: inherit;
+  line-height: 1.8;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
 
