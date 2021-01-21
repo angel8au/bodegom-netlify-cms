@@ -18,7 +18,7 @@ MEDIA QUERY: SE ESTA PONIENDO UNO PARA TODOS LOS ELEMENTOS Y PARA CADA UNO DE LO
 --azul-bodegom: #00357E;
 --azul-bodegom-lighter: #1387DE;
 --azul-bodegom-darker: rgb(2, 41, 60);
---naranja-bodegom: #E77122;
+--naranja-bodegom: #FF9417;
 --background-color: #FFF;
 --text-color-87:rgba(0, 0, 0, 0.87);
 --text-color-60:rgba(0, 0, 0, 0.60);
@@ -515,7 +515,7 @@ button {
     letter-spacing: 0.03em;
     font-size: 14px;
     line-height: 16px;
-    color: var(--text-color-white)
+    color: var(--text-color-87)
   }
   
   button a{
