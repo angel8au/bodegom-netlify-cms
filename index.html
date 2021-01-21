@@ -32,9 +32,9 @@
   <link rel="shortcut icon" type="image/x-icon" href="assets/images/bodegom-xicon.png">
   <link rel="stylesheet" type="text/css" media="screen" href="assets/css/styles.css">
   <!-- popup -->
-  
- 
-  
+
+
+
   <noscript><img height="1" width="1" style="display:none"
       src="https://www.facebook.com/tr?id=544024935768628&ev=PageView&noscript=1" /></noscript>
   <!-- End Facebook Pixel Code -->
@@ -102,9 +102,9 @@
     <!-- Aqui empieza el Navbar-->
     <nav class="sticky">
       <div class="container col-12 p-1">
-        
-          <img class="m-0" style="height: 40px;" src="assets/images/logo-bodegom-horizontal.svg" alt="Logo Bodegom">
-  
+
+        <img class="m-0" style="height: 40px;" src="assets/images/logo-bodegom-horizontal.svg" alt="Logo Bodegom">
+
 
         <div class="d-flex-row">
           <div class="nav_options ml-3">
@@ -186,7 +186,7 @@
           <div class="card p-2">
             <picture alt="Soluciones para Negocios">
               <source media="(min-width: 650px)" srcset="assets/images/negocios-lg.jpg">
-                <source type="image/webp" srcset="assets/images/empresas.webp">
+              <source type="image/webp" srcset="assets/images/empresas.webp">
               <img class="card_img" src="assets/images/empresas.jpg" alt="Soluciones para Negocios">
             </picture>
 
@@ -228,7 +228,7 @@
               <source type="image/webp" srcset="assets/images/elige-bodega.webp">
               <img src="assets/images/elige-bodega.png" class="img-100 gird_1_3_img pb-1" alt="Selecciona una bodega ">
             </picture>
-            
+
           </a>
         </li>
         <li>
@@ -280,32 +280,32 @@
               <source type="image/webp" srcset="assets/images/bodega-mediana.webp">
               <img src="assets/images/bodega-mediana.jpg" class="img-fluid img-100" alt="Bodega Merdiana">
             </picture>
-              <div class="p-2">
-                <h3 class=" card--title">Bodega Mediana</h3>
-                <br>
-              </div>
-
-          </div>
-      </a>
-      <a href="https://www.bodegom.com.mx/bodegas/grande">
-        <div class="card ">
-          <picture>
-            <source type="image/webp" srcset="assets/images/bodega-grande.webp">
-            <img src="assets/images/bodega-grande.jpg" class="img-fluid img-100" alt="Bodega Grande">
-          </picture>
-
-
-          <div class="p-2">
-            <div>
-              <h3 class=" card--title">Bodega Grande</h3>
+            <div class="p-2">
+              <h3 class=" card--title">Bodega Mediana</h3>
               <br>
             </div>
 
           </div>
-        </div>
+        </a>
+        <a href="https://www.bodegom.com.mx/bodegas/grande">
+          <div class="card ">
+            <picture>
+              <source type="image/webp" srcset="assets/images/bodega-grande.webp">
+              <img src="assets/images/bodega-grande.jpg" class="img-fluid img-100" alt="Bodega Grande">
+            </picture>
 
-      </a>
-    </div>
+
+            <div class="p-2">
+              <div>
+                <h3 class=" card--title">Bodega Grande</h3>
+                <br>
+              </div>
+
+            </div>
+          </div>
+
+        </a>
+      </div>
 
     </div>
   </section>
@@ -351,7 +351,7 @@
             <source type="image/webp" srcset="assets/images/junto-a-ley-abastos.webp">
             <img src="assets/images/junto-a-ley-abastos.png" class="img-100" alt="Junto a Ley Abastos">
           </picture>
-          
+
         </div>
         <div>
           <h2 class="mb-1">Junto a Ley Abastos</h2>
@@ -449,52 +449,55 @@
     <br>
     <br>
   </footer>
-<script type="text/javascript">
-   function __loadTawkTo() {
-              setTimeout(function (){
-                //FACEBOOK PIXEL///
-                ! function (f, b, e, v, n, t, s) {
-                    if (f.fbq) return;
-                    n = f.fbq = function () {
-                      n.callMethod ?
-                        n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-                    };
-                    if (!f._fbq) f._fbq = n;
-                    n.push = n;
-                    n.loaded = !0;
-                    n.version = '2.0';
-                    n.queue = [];
-                    t = b.createElement(e);
-                    t.async = !0;
-                    t.src = v;
-                    s = b.getElementsByTagName(e)[0];
-                    s.parentNode.insertBefore(t, s)
-                  }(window, document, 'script',
-                    'https://connect.facebook.net/en_US/fbevents.js');
-                  fbq('init', '544024935768628');
-                  fbq('track', 'PageView');
-                  //end FACEBOOK PIXEL///
-//GTM//
-                              (function (w, d, s, l, i) {
-                  w[l] = w[l] || [];
-                  w[l].push({
-                    'gtm.start': new Date().getTime(),
-                    event: 'gtm.js'
-                  });
-                  var f = d.getElementsByTagName(s)[0],
-                    j = d.createElement(s),
-                    dl = l != 'dataLayer' ? '&l=' + l : '';
-                  j.async = true;
-                  j.src =
-                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-                  f.parentNode.insertBefore(j, f);
-                })(window, document, 'script', 'dataLayer', 'GTM-PB7DCHW');
-                          },100);
-                          //GTM/
-                        }
-                      
-                        window.addEventListener('scroll', __loadTawkTo);
-</script>
+  <script type="text/javascript">
+    function __loadTawkTo() {
+      if (MarketingToolsLoaded) {
+        setTimeout(function () {
+          //FACEBOOK PIXEL///
+          ! function (f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function () {
+              n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+          }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+          fbq('init', '544024935768628');
+          fbq('track', 'PageView');
+          //end FACEBOOK PIXEL///
+          //GTM//
+          (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+              'gtm.start': new Date().getTime(),
+              event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+              j = d.createElement(s),
+              dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+              'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+          })(window, document, 'script', 'dataLayer', 'GTM-PB7DCHW');
+        }, 100);
+        //GTM/
+      }
+      window.MarketingToolsLoaded=true
+    }
+
+    window.addEventListener('scroll', __loadTawkTo);
+  </script>
 </body>
 
 </html>
