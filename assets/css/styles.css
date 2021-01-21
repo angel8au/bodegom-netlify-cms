@@ -65,7 +65,7 @@ html, body {
   padding: 0px;
   font-family: var(--font-family);
   background: var(--background-color);
-  line-height: 1.618;
+  
 }
 
 
@@ -101,6 +101,7 @@ h2 {
 h3 {
   font-weight: 600;
   font-size: 22px;
+  line-height: 1.618;
   margin: 0px;
   padding: 0px;
   color: var(--text-color-87);
@@ -109,6 +110,7 @@ h3 {
 h4 {
   margin: 0px;
   padding: 0px;
+
   color: var(--text-color-87);
   font-style: normal;
   font-weight: normal;
@@ -172,6 +174,7 @@ a {
     padding: 0px;
     font-style: normal;
     font-weight: 700;
+    font-display: swap;
     font-size: 76px;
     line-height: 1em;
     color: var(--text-color-white);
@@ -193,8 +196,10 @@ a {
   p {
     margin: 0px;
     padding: 0px;
+    font-display: swap;
     font-style: normal;
     font-size: 18px;
+    line-height: 1.618;
     color: var(--text-color-60);
   }
   }  
@@ -772,6 +777,7 @@ a.card[disabled] {
   grid-auto-flow: column;
   grid-gap: 16px;
   padding-inline-start: 0px;
+  
 }  
 
 .footer__ul--row {
@@ -795,6 +801,7 @@ a.card[disabled] {
 .footer li {
   list-style: none;
   display: grid;
+  line-height: 1.618;
   grid-gap: var(--medida2);
 }
 
@@ -1120,7 +1127,9 @@ article a:hover {
   align-items: flex-start;
   justify-content: flex-end;
 }
-
+.interlineado-0 {
+line-height: 1;
+}
 
 /* --- float buttom whatsapp --- */
 .float{
