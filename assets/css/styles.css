@@ -75,12 +75,21 @@ html, body {
 /* ------------------ TYPOGRAFIA --- */
 /* -----MEDIA-- MOBIL (480PX) --- */
 /* --- H1 --- */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Pacifico Regular'), local('Pacifico-Regular'), url(https://fonts.gstatic.com/s/pacifico/v12/FwZY7-Qmy14u9lezJ-6H6MmBp0u-.woff2) format('woff2');
+  font-display: swap;
+}
+
 h1 {
   margin: 0px;
   padding: 0px;
   font-style: bold;
   font-weight: bold;
   font-size: 30px;
+  font-display: swap;
   line-height: 1.333;
   color: var(--text-color-white);
 }
@@ -142,6 +151,7 @@ a {
     font-style: normal;
     font-weight: 600;
     font-size: 42px;
+    font-display: swap;
     line-height: 1em;
     color: var(--text-color-white);
   }
@@ -154,6 +164,7 @@ a {
     font-style: normal;
     font-weight: 600;
     font-size: 42px;
+    font-display: swap;
     line-height: 1em;
     color: var(--text-color-white);
   }
