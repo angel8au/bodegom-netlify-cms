@@ -132,6 +132,16 @@ p {
   color: var(--text-color-60) ;
 }
 
+.subtitle {
+  margin: 0px;
+  padding: 0px;
+
+  color: var(--text-color-87);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 20px;;
+}
 
 a {
   text-decoration: none;
