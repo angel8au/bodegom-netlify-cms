@@ -558,6 +558,45 @@ button {
     border-radius: 20px;
     border-width: 0px;
   }
+  /* --- BOTON whatsapp --- */
+
+.bwhatsapp {
+  /* Rectangulo*/
+    
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.12);
+    border-radius: 20px;
+    height: 42px;
+    border-width: 0px;
+    cursor: pointer;
+    padding-right: 0px; 
+    padding-left: 0px;
+   
+  
+  /* texto*/
+    font-weight: 700;
+    font-family: var(--font-family);
+    letter-spacing: 0.03em;
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--text-color-87)
+  }
+  
+  .bwhatsapp a{
+    font-style: bold;
+    
+    font-size: 14px;
+    line-height: 16px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .bwhatsapp:hover {
+    /* Rectangulo*/
+    background-color: #00aa0e;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.12);
+    border-radius: 99px;
+    border-width: 0px;
+  }
   
 .button--secundary {
   background: #FFFFFF;
