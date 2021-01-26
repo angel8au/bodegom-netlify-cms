@@ -93,14 +93,14 @@ h2 {
   padding: 0px;
   font-style: normal;
   font-weight: 600;
-  font-size: 24px;
+  font-size: 28px;
   line-height: 33px;
   color: var(--text-color-87);
 }
 
 h3 {
   font-weight: 600;
-  font-size: 22px;
+  font-size: 20px;
   line-height: 1.618;
   margin: 0px;
   padding: 0px;
@@ -888,7 +888,7 @@ a.card[disabled] {
   margin-bottom: var(--medida1);
 }
 
-.footer--ul.ul:before{
+.footer--ul:before{
   content:attr(aria-label);
   font-size:120%;
   font-weight:bold;
@@ -1112,6 +1112,7 @@ article a:hover {
   margin-right: var(--medida3);
 }
 
+
  /* ------------------------------------ tablets 1024 --- */
 @media screen and (min-width: 730px) {
 
@@ -1167,6 +1168,12 @@ article a:hover {
   padding-right: var(--medida1);
 }
 
+.pt--contener {
+  padding-top: 72px; 
+}
+.pb--contener {
+  padding-bottom: 72px; 
+}
 
 /* --- DISPLAY SETTINGS 
 .center {
