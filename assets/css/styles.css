@@ -254,6 +254,7 @@ said applies to this layer:------------------ */
 
  /* --- LAY OUT --- */
  .container {
+   display: grid;
   margin-right: auto;
   margin-left: auto;
   padding: var(--medida2);
