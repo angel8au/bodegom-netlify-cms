@@ -883,12 +883,12 @@ a.card[disabled] {
 .footer a:hover {
   color: var(--naranja-bodegom);
 }
-ul {
+.footer--ul {
   padding-inline-start: 0px;
   margin-bottom: var(--medida1);
 }
 
-ul:before{
+.footer--ul.ul:before{
   content:attr(aria-label);
   font-size:120%;
   font-weight:bold;
