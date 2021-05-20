@@ -739,6 +739,7 @@ a.card[disabled] {
 .card_img {
   width: 100%;
   max-width: 128px;
+  border-radius: 12px 12px 0px 0px;
 }
 /* --- a--- */
 
@@ -1032,9 +1033,15 @@ article a:hover {
 .border-radius {
   border-radius: 30px;
 }
+
+.border-radius-card {
+  border-radius: 12px 12px 0px 0px;
+}
+
 .img-100 {
   width: 100%;
   line-height: 0;
+  border-radius: 12px 12px 0px 0px;
 }
 .center {
   text-align: center;
