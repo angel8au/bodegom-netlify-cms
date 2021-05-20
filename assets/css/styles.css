@@ -25,9 +25,9 @@ MEDIA QUERY: SE ESTA PONIENDO UNO PARA TODOS LOS ELEMENTOS Y PARA CADA UNO DE LO
 --text-color-40:rgba(0, 0, 0, 0.40);
 --text-color-white: #FFF;
 /* --- box-shodow --- */
---card-elevation: 0px 4px 8px rgba(0, 0, 0, 0.12);
+--card-elevation: 0px 6px 12px rgba(29, 7, 1, 0.12);
 /* --- border-radius --- */
---card-border-radius: 25px;
+--card-border-radius: 12px;
 
 /* --- typografia --- */
 --font-family:  'Inter', sans-serif;
