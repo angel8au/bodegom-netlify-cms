@@ -1123,7 +1123,7 @@ article a:hover {
 
 
  /* ------------------------------------ tablets 1024 --- */
-@media screen and (min-width: 730px) {
+@media screen and (min-width: 768px) {
 
   .hidde-desktop {
    display: none;
@@ -1310,5 +1310,15 @@ line-height: 1;
 @media screen and (min-width: 1024px) {
   .nav {
       display: none;
+  }
+}
+
+.hidde-movil {
+  display: none;
+}
+/* ------- utility hide --- */
+@media screen and (min-width: 768px) {
+  .hidde-movil {
+      display: block;
   }
 }
