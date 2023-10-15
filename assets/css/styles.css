@@ -401,7 +401,7 @@ PAGINA DE PRODUCTO
   grid-template-columns: 1fr;
   grid-gap: var(--medida1);
  }
- @media screen and (min-width: 480px) {
+ @media screen and (min-width: 768px) {
   .product_list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
